@@ -1,6 +1,7 @@
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-  }
+// if (process.env.NODE_ENV !== 'production') {
+//     require('dotenv').config();
+//   }
+require('dotenv').config();
   const express = require('express')
   const path = require('path')
   const hbs = require('hbs')
@@ -26,14 +27,14 @@ if (process.env.NODE_ENV !== 'production') {
   app.get('', (req, res) => {
     res.render('index', {
       title: 'Weather',
-      name: 'Andrew Mead'
+      name: 'Kiran Jha'
     })
   })
   
   app.get('/about', (req, res) => {
     res.render('about', {
       title: 'About Me',
-      name: 'Andrew Mead'
+      name: 'Kiran Jha'
     })
   })
   
@@ -41,7 +42,7 @@ if (process.env.NODE_ENV !== 'production') {
     res.render('help', {
       helpText: 'This is some helpful text.',
       title: 'Help',
-      name: 'Andrew Mead'
+      name: 'Kiran Jha'
     })
   })
   
@@ -94,7 +95,7 @@ if (process.env.NODE_ENV !== 'production') {
   app.get('/help/*', (req, res) => {
     res.render('404', {
       title: '404',
-      name: 'Andrew Mead',
+      name: 'Kiran Jha',
       errorMessage: 'Help article not found.'
     })
   })
@@ -102,10 +103,10 @@ if (process.env.NODE_ENV !== 'production') {
   app.get('*', (req, res) => {
     res.render('404', {
       title: '404',
-      name: 'Andrew Mead',
+      name: 'Kiran Jha',
       errorMessage: 'Page not found.'
     })
   })
   
   app.listen(port, () => console.log(`Server is up on port ${port}.`))
-  F
+  
