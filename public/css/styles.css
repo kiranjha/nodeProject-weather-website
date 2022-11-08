@@ -1,13 +1,17 @@
 body {
     color: #333333;
-    font-family: arial;
+    font-family: calibri;
+    font-weight: bold;
     max-width: 650px;
     margin: 0 auto;
     padding: 0 16px;
+    
+    background-image: linear-gradient(to right, #88b1ee , #82e6e8);
   
     display: flex;
     flex-direction: column;
-    min-height: 100vh
+    min-height: 100vh;
+     
   }
   
   .main-content {
@@ -15,7 +19,8 @@ body {
   }
   
   footer {
-    color: #888888;
+    /* color: #888888; */
+    color : darkblue;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
@@ -32,7 +37,7 @@ body {
   }
   
   header a {
-    color: #888888;
+    color: darkblue;
     margin-right: 16px;
     text-decoration: none;
   }
